@@ -1,4 +1,10 @@
 from django.contrib import admin
-from blog.models import Post
+from blog.models import Post,Category,Tag
 # Register your models here.
-admin.site.register(Post)
+class PostAdmin(admin.ModelAdmin):
+	list_display = ['title','create_time','modified_time','category','author']
+		
+
+admin.site.register(Post,PostAdmin)
+admin.site.register(Category)
+admin.site.register(Tag)

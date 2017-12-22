@@ -1,6 +1,7 @@
 # coding: utf-8
 from django.db import models
 from django.contrib.auth.models import User #内置的应用
+from django.urls import reverse
 # Create your models here.
 class Category(models.Model):
 	"""分类"""
@@ -26,3 +27,6 @@ class Post(models.Model):
 	author = models.ForeignKey(User)#
 	def __str__(self):
 		return self.title
+	# 自定义 get_absolute_url 方法
+	def get_absolute_url(self):
+		return reverse('blog:detail',kwargs={'pk':self.pk}) #注意是冒号
