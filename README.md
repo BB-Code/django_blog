@@ -1,4 +1,4 @@
-# django_blog
+# Django_Blog
 使用 Django 搭建的博客系统
 
 ### 涉及到扩展的技术
