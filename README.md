@@ -11,5 +11,6 @@
    python manage.py runserver
    打开浏览器 http://localhost:8000/
 3. 预览
-
 ![预览gif](http://oz3a870bn.bkt.clouddn.com/gifblog.gif)
+
+4.欢迎 star
