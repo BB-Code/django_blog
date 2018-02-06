@@ -1,5 +1,5 @@
 # Django_Blog
-使用 Django 搭建的博客系统
+:cn: 使用 Django 搭建的博客系统
 
 ### 涉及到扩展的技术
 - markdown和代码高亮
